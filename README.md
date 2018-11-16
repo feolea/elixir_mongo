@@ -12,16 +12,22 @@ To start your Phoenix app:
 
     `$ iex -S mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000/products`](http://localhost:4000/products) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
+You need an instance of mongodb running at port 27017, if you do not want to install it on your machine, just use a docker one with:
 
+  `$ docker run -p 27017:27017 --name mongo-3 -v ~/docker-mongo-3-data:/data/db -d mongo:3.4`
+
+  and then:
+
+  `$ docker start mongo-3`
 
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
+  * Guides: https://hexdocs.pm/phoenix/overview.html
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
