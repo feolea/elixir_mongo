@@ -43,7 +43,8 @@ defmodule ElixirMongo.Mixfile do
       {:plug_cowboy, "~> 1.0"},
       {:ecto, "~> 2.1.0", override: true},
       {:mongodb_ecto, github: "michalmuskala/mongodb_ecto"},
-      {:credo, ">= 0.0.0", only: [:dev, :test], runtime: false}
+      {:credo, "~> 0.10.2", only: [:dev, :test], runtime: false},
+      {:exredis, "~> 0.3.0"}
     ]
   end
 
